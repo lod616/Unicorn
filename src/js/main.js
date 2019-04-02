@@ -58,23 +58,33 @@ $(document).ready(function(){
 		nextArrow: '.navigation-clients',
 		prevArrow: false,
 		dots: false,
-		responsive: [{
-			breakpoint: 780,
-      settings: {
-				slidesToShow: 4,
-				infinite: true,
-        dots: false
+		responsive: [
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 3,
+					infinite: true,
+					dots: false,
+				}
 			},
-			breakpoint: 530,
-      settings: {
-				slidesToShow: 3,
-				infinite: true,
-        dots: false
+
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 2,
+				}
 			},
-		
-		}]
+
+			{
+				breakpoint: 380,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
   });
 });
+
 
 $(document).ready(function(){
   $('.portfolio-js-slider').slick({
@@ -92,7 +102,27 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		nextArrow: '.date-navigation__right',
 		prevArrow: false,
-		dots: false
+		dots: false,
+		responsive: [
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					dots: false,
+				}
+			},
+
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 1,
+					infinite: true,
+					dots: false,
+				}
+			},
+
+		]
   });
 });
 

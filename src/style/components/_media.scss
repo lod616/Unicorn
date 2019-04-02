@@ -1,6 +1,7 @@
-@media only screen and(max-width: 1300px){
-	.navigation-next{
-		right:-1%;
+@media only screen and(max-width: 1220px){
+	.top-footer__content{
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
@@ -8,8 +9,8 @@
 	.top-banner__title{
 		font-size: 3.5rem;
 	}
-	.navigation-next{
-		right:1%;
+	.featured-section__item{
+		padding: 45px 25px;
 	}
 }
 
@@ -35,9 +36,8 @@
 	.header-list{
 		position: absolute;
 		right: 0;
-		top: 7vh;
+		top: 10vh;
 		height: 40vh;
-		//background-color: $mainColor;
 		flex-direction: column;
 		justify-content: space-around;
 		width: 30%;
@@ -45,16 +45,17 @@
 		transition: transform 0.5s ease-in;
 		transform: translateX(100%);
 		&__link{
+			display: block;
 			color: #fff;
-			
+			width: 100%;
+			height: 40px;
 		}
 		&__item{
 			margin-left: 0;
-			display: block;
 			background-color: $mainColor;
 			width: 100%;
 			text-align: center;
-			height: 40px;
+			
 			line-height: 38px;
 		}
 	}
@@ -68,6 +69,12 @@
 	.top-banner__title{
 		font-size: 2.5rem;
 	}
+	.featured-section__descr{
+		font-size: 1.3rem;
+	}
+	.date-content__title{
+		font-size: .9rem;
+	}
 }
 
 @media only screen and(max-width: 780px){
@@ -76,8 +83,6 @@
 	}
 	.facts-wrapper{
 		flex-direction: column;
-		flex-wrap: nowrap;
-		width: 100%;
 		&__item{
 			margin-bottom: 10px;
 			&:last-child{
@@ -87,6 +92,37 @@
 		&__text{
 			font-size: 1rem;
 		}
+	}
+	.description-gallery{
+		align-items: center;
+		flex-direction: column;
+		&__item{
+			width: 100%;
+			margin-bottom: 30px;
+			&:last-child { margin-bottom: 0; }
+			&:nth-child(1){ order: 1; }
+			&:nth-child(2){ order: 2; }
+			&:nth-child(4){ order: 3; }
+			&:nth-child(3){ order: 4; }
+			&:nth-child(5){ order: 5; }
+			&:nth-child(6){ order: 6; }
+		}
+		&__text{
+			margin-bottom: 0;
+		}
+		&__title{
+			margin-bottom: 30px;
+		}
+	}
+	.footer-content__wrapper{
+		flex-direction: column;
+		& > * {
+			margin: 10px 0;
+			&:first-child {margin-top: 0;}
+			&:last-child {margin-bottom: 0;}}
+	}
+	.footer-content__text{
+		text-align: center;
 	}
 }
 
@@ -113,14 +149,18 @@
 }
 
 @media only screen and(max-width: 600px){
-	.top-banner__content{
-		top: 45%;
-		right: 50%;
-		transform: translateX(50%);
-	}
-	
 	html,body{
 		font-size: 14px;
+	}
+	.top-footer__submit-wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.top-footer__subject{
+		margin-left: 0;
+	}
+	.top-footer__email{
+		margin-bottom: 20px;
 	}
 }
 
@@ -138,22 +178,36 @@
 	}
 
 	.top-banner__content{
-		max-width: 70%;
+		max-width: 100%;
+	}
+
+	.facts-wrapper__item{
+		width: 100%;
 	}
 	
 }
 
 @media only screen and(max-width: 390px){
-	.top-banner__content{
-		top: 25%;
-	}
 	.top-banner__btn{
 		padding: 0 40px;
+	}
+	.top-banner__text{
+		line-height: 30px;
 	}
 	.advantages-body__title{
 		font-size: 1rem;
 	}
 	.portfolio-tabs{
 		flex-wrap: wrap;
+	}
+	.featured-section__info{
+		font-size: 0.7rem;
+	}
+	.top-footer__wrapper{
+		flex-direction: column;
+		& > * {
+			margin: 20px 0;
+			&:first-child {margin-top: 0;}
+			&:last-child {margin-bottom: 0;}}
 	}
 }
