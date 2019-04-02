@@ -1,0 +1,159 @@
+@media only screen and(max-width: 1300px){
+	.navigation-next{
+		right:-1%;
+	}
+}
+
+@media only screen and(max-width: 1200px){
+	.top-banner__title{
+		font-size: 3.5rem;
+	}
+	.navigation-next{
+		right:1%;
+	}
+}
+
+@media only screen and(max-width: 1100px){
+	.header-body{
+		padding: 0 30px;
+	}
+}
+
+@media only screen and(max-width: 980px){
+	.top-footer__content{
+		flex-wrap: wrap;
+	}
+}
+
+@media only screen and(max-width: 750px){
+	body{
+		overflow-x: hidden;
+	}
+	.header-burger{
+		display: block;
+	}
+	.header-list{
+		position: absolute;
+		right: 0;
+		top: 7vh;
+		height: 40vh;
+		//background-color: $mainColor;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 30%;
+		background: rgba(33, 33, 33, 0.9);
+		transition: transform 0.5s ease-in;
+		transform: translateX(100%);
+		&__link{
+			color: #fff;
+			
+		}
+		&__item{
+			margin-left: 0;
+			display: block;
+			background-color: $mainColor;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+			line-height: 38px;
+		}
+	}
+	.header-burger--active{
+		transform: translateX(0%);
+	}
+	
+}
+
+@media only screen and(max-width: 880px){
+	.top-banner__title{
+		font-size: 2.5rem;
+	}
+}
+
+@media only screen and(max-width: 780px){
+	.top-banner__content{
+		max-width: 60%;
+	}
+	.facts-wrapper{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 100%;
+		&__item{
+			margin-bottom: 10px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&__text{
+			font-size: 1rem;
+		}
+	}
+}
+
+@media only screen and(max-width: 650px){
+	.advantages-body{
+		flex-direction: column;
+		align-items: center;
+		&__item{
+			width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		&__text{
+			margin: 0 auto;
+		}
+	}
+	.team-gallery{
+		flex-direction: column;
+		&__item{
+			margin-bottom: 40px;
+			&:last-child{margin-bottom: 0;}
+		}
+	}
+}
+
+@media only screen and(max-width: 600px){
+	.top-banner__content{
+		top: 45%;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	
+	html,body{
+		font-size: 14px;
+	}
+}
+
+
+
+@media only screen and(max-width: 530px){
+	.top-banner__title{
+		font-size: 1.5rem;
+	}
+	.top-banner__btn{
+		height: 35px;
+		line-height: 33px;
+		font-size: 1rem;
+		white-space: nowrap;
+	}
+
+	.top-banner__content{
+		max-width: 70%;
+	}
+	
+}
+
+@media only screen and(max-width: 390px){
+	.top-banner__content{
+		top: 25%;
+	}
+	.top-banner__btn{
+		padding: 0 40px;
+	}
+	.advantages-body__title{
+		font-size: 1rem;
+	}
+	.portfolio-tabs{
+		flex-wrap: wrap;
+	}
+}

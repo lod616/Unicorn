@@ -1,0 +1,61 @@
+html,body{
+	font-size: 16px;
+}
+
+body{
+	position: relative;
+	font-family: $mainFont;
+}
+
+.container{
+	max-width: 1175px;
+	margin: 0 auto;
+}
+
+section{
+	padding: 90px 0;
+}
+
+a{text-decoration: none;}
+
+ul{list-style: none;}
+
+.title-section-g{
+	display: block;
+	font-size: 1.5rem;
+	font-family: $boldFont;
+	text-align: center;
+	margin-bottom: 30px; 
+}
+
+.title-section-g--white{
+	display: block;
+	font-size: 1.5rem;
+	font-family: $boldFont;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #fff; 
+}
+
+
+.title-section-mini-g{
+	font-size: 1.2rem;
+	font-family: $lightBold;
+}
+
+
+.section-text-g{
+	text-align: center;
+	color: $boulder;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 767px;
+	line-height: 2;
+	margin-top: 40px;
+}
+
+.next-arrow__icon{
+	width: 14px;
+	height: 23px;
+}
+
